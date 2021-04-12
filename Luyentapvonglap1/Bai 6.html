@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = 0;
+    let num = +prompt('Nhập số lượng hạng tử :');
+    let count = 0;
+    let i = 1;
+    while (count < num) {
+        if(i%7==0) {
+            count++;
+            total=total+i;
+        }
+        i++;
+    }
+    alert(total);
+</script>
+</body>
+</html>
