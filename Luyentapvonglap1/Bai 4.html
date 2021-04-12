@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 1, b = 0, c;
+    let count = 0;
+    while (count >=0 ) {
+        c = a;
+        a = a + b;
+        b = c;
+        count++;
+        if (a%5==0) {
+            document.write(a);
+            break;
+        }
+    }
+</script>
+</body>
+</html>
