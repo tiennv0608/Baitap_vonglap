@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 1, b = 0, c;
+    let num = +prompt("Nhập số lượng dãy số :");
+    let count = 0;
+    while (count < num) {
+        document.write(a + "; ");
+        c = a;
+        a = a + b;
+        b = c;
+        count++;
+    }
+</script>
+</body>
+</html>
