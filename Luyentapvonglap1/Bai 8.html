@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="button" value="Chơi" onclick="playGame()">
+</form>
+<script>
+    function playGame() {
+        let a = +prompt("Nhập giá trị đầu :");
+        let b = +prompt("Nhập giá trị cuối :");
+        if (a>=b) {
+            alert("Nhập sai");
+            a = +prompt("Nhập lại giá trị đầu :");
+            b = +prompt("Nhập lại giá trị cuối :");
+        }
+        value = parseInt(Math.round(Math.random()*(b-a)+a));
+        alert(value);
+        random = +prompt("Nhập số trong khoảng từ " + a + " đến " + b);
+        while (random!=value) {
+            if (random > value) {
+                alert("Sorry, a little higher!");
+                random = +prompt("Mời nhập lại số trong khoảng từ " + a + " đến " + b);
+            } else if (random < value) {
+                alert("Sorry, a little lower!");
+                random = +prompt("Mời nhập lại số trong khoảng từ " + a + " đến " + b);
+            }
+        }
+        alert("You're lucky!!!");
+    }
+</script>
+</body>
+</html>
