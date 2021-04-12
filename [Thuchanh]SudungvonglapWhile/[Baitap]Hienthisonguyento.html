@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtraso(n) {
+        if (n < 2) {
+            return false;
+        }
+        else if (n == 2) {
+            return true;
+        }
+        else if (n % 2 == 0) {
+            return false;
+        }
+        else {
+            for (i = 3; i < n; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+        }
+        return true
+    }
+    let n = prompt("So nguyen to can nhap",'');
+    let count = 0;
+    let number = 2;
+    let result = "";
+    while ( count < n) {
+        if (kiemtraso(number)) {
+            count +=1;
+            result = result + number + '<br>';
+        }
+        number+=1;
+    }
+    document.write(result);
+</script>
+</body>
+</html>
