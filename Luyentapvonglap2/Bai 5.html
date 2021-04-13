@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt("Nhập số tiền muốn vay :");
+    let month = +prompt("Nhập số tháng muốn vay :");
+    let laiSuat = +prompt("Nhập lãi suất ngân hàng :");
+    for (i=1;i<month;i++) {
+        money = money + money*(laiSuat/12)/100;
+    }
+    document.write("Tổng số tiền phải trả sau " + month + " tháng là : " +money);
+</script>
+</body>
+</html>
